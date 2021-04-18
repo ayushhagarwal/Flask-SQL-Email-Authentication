@@ -1,0 +1,10 @@
+body {
+    background-color: #85aae6;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+.login{
+    margin-top: 10rem;
+    width: 20%;
+}
