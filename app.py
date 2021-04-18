@@ -13,7 +13,6 @@ salt=b'$2b$12$Kh9S5S4FHT.WhzBa8tLZvO'
 
 
 
-conn=mysql.connector.connect(host="remotemysql.com",user="npmPXAkj85",password="rJ844cU2pj",database="npmPXAkj85")
 cursor=conn.cursor()
 
 
