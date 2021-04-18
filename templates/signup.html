@@ -51,18 +51,18 @@
       </div>
     </nav>
     <div class="container signup">
-      <form>
+      <form method="post" action="/adduser">
         <div class="form-group">
           <label for="exampleInputEmail1">Username</label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Username">
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Username" name="uusername">
         </div>
         <div class="form-group">
           <label for="exampleInputEmail1">Email Address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="uemail">
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="upassword">
           <small id="emailHelp" class="form-text text-muted">We'll never share your password with anyone else.</small>
         </div>
         <button type="submit" class="btn btn-primary">Create Account</button>
