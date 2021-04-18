@@ -31,12 +31,18 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#"
+            <a
+              class="nav-link"
+              href="{{ url_for('login') }}"
+              style="text-decoration: none"
               >Login <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#"
+            <a
+              class="nav-link"
+              href="{{ url_for('signup') }}"
+              style="text-decoration: none"
               >Signup <span class="sr-only">(current)</span></a
             >
           </li>
@@ -52,7 +58,9 @@
           This is a Flsk SQL user authentication project.<br />Click on the
           below button to create your account
         </p>
-        <button type="button" class="btn btn-light btn-lg">Join Now</button>
+        <a href="{{ url_for('signup') }}" style="text-decoration: none">
+          <button type="button" class="btn btn-light btn-lg">Join Now</button>
+        </a>
       </div>
     </div>
     <script
