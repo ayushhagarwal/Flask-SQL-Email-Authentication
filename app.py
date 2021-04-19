@@ -68,7 +68,10 @@ def logout():
 
 @app.route('/page1')
 def page1():
-    return render_template("page1.html")
+    if 'user_id' in session:
+        return render_template("page1.html")
+    else:
+        return redirect('/login')
     
 if __name__=="__main__":
     app.run(host ='0.0.0.0', port = 5001, debug = True)     
