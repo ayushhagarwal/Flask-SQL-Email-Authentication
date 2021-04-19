@@ -28,4 +28,16 @@ conn=mysql.connector.connect(host="127.0.0.1",user="root",password="",database="
 
 That is it. Next install the flask dependencies referring the requirements.txt file and type "python app.py" in the terminal. 
 
+
+##### List of features on the application : 
+1. Users can log in only if his credentials are present in database.
+
+2. Without logging in the user cannot go to next page even with using routes of that particular page.
+
+3. When logged in the user can go to other pages using routes.
+
+4. After clicking on logout the user cannot go to next page again using routes.
+
+5. If the email or username already exists in the database the user will not be allowed to create the account.
+
 For any further queries you can mail me or connect with me on twitter (@_ayushagarwal11)
