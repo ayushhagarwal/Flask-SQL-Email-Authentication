@@ -12,7 +12,6 @@ app.secret_key=os.urandom(24)
 salt=b'$2b$12$Kh9S5S4FHT.WhzBa8tLZvO'
 
 
-
 cursor=conn.cursor()
 
 
@@ -33,7 +32,7 @@ def user_login():
     users=cursor.fetchall()
     if len(users)>0:
         session['user_id']=users[0][0]
-        return "login successful"
+        return redirect('/page1')
     else:
         return redirect('/login')
 
@@ -67,6 +66,9 @@ def logout():
     session.pop('user_id')
     return redirect('/login')
 
+@app.route('/page1')
+def page1():
+    return render_template("page1.html")
     
 if __name__=="__main__":
     app.run(host ='0.0.0.0', port = 5001, debug = True)     
