@@ -5,6 +5,8 @@ A Flask, SQL email authentication web application. The database used for storing
 
 To set up the database you can create an account on https://remotemysql.com. Create a databse there, it will give you an username and password to the database. Note that down. 
 Connect to that database using the below syntax. Just replace the username, password,databse name on the code.
+
+Replace the below code snippet on line 14.
 ```
 conn=mysql.connector.connect(host="remotemysql.com",user="",password="",database="")
 ```
