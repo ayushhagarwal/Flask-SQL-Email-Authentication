@@ -61,5 +61,12 @@ def adduser():
     conn.commit()
     return render_template('login.html')
 
+
+@app.route('/logout')
+def logout():
+    session.pop('user_id')
+    return redirect('/login')
+
+    
 if __name__=="__main__":
     app.run(host ='0.0.0.0', port = 5001, debug = True)     
