@@ -11,7 +11,7 @@ app=Flask(__name__)
 app.secret_key=os.urandom(24)
 salt=b'$2b$12$Kh9S5S4FHT.WhzBa8tLZvO'
 
-
+# Add database connection code here
 cursor=conn.cursor()
 
 
@@ -50,7 +50,7 @@ def adduser():
     password=bcrypt.hashpw(password.encode('utf-8'),salt)
     # print(salt)
     print(password)
-    cursor.execute("""SELECT * FROM `users` WHERE `EMAIL` LIKE '{}' """.format(email))
+    cursor.execute("""SELECT * FROM `users` WHERE `NAME` LIKE '{}' OR `EMAIL` LIKE '{}' """.format(name,email))
     user=cursor.fetchall()
     if len(user)>0:
         return "email id already exists, please try with another one"
