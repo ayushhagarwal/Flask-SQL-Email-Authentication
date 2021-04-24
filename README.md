@@ -27,6 +27,10 @@ conn=mysql.connector.connect(host="127.0.0.1",user="root",password="",database="
 ```
 
 That is it. Next install the flask dependencies referring the requirements.txt file and type "python app.py" in the terminal. 
+Run the following command to install all the reuqired dependencies : 
+```
+pip install -r requirements.txt
+```
 
 
 ##### List of features on the application : 
