@@ -31,7 +31,10 @@ Run the following command to install all the reuqired dependencies :
 ```
 pip install -r requirements.txt
 ```
-
+After installing the dependencies run the project using the following command in terminal: 
+```
+python app.py
+```
 
 ##### List of features on the application : 
 1. Users can log in only if his credentials are present in database.
