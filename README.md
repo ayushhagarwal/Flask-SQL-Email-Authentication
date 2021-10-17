@@ -47,4 +47,4 @@ python app.py
 
 5. If the email or username already exists in the database the user will not be allowed to create the account.
 
-For any further queries you can mail me or connect with me on twitter (@_ayushagarwal11)
+For any further queries you can mail me or connect with me on twitter (@ayushdev_24)
