@@ -52,6 +52,7 @@
     </nav>
     <div class="container signup">
       <form method="post" action="/adduser">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
         <div class="form-group">
           <label for="exampleInputEmail1">Username</label>
           <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Username" name="uusername">
